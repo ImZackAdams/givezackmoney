@@ -4,74 +4,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>How Can You Give Zack Money? - GiveZackMoney</title>
-    <style>
-        /* ... (rest of the styles remains unchanged) ... */
+    <title>How to Give Zack Money?</title>
 
-        form {
-            max-width: 500px;
-            margin: 0 auto;
-        }
-
-        label {
-            display: block;
-            margin-bottom: 10px;
-            color: #4682B4; /* Steel Blue */
-        }
-
-        input[type="text"], input[type="number"], select {
-            width: 100%;
-            padding: 10px;
-            margin-bottom: 20px;
-            border: 1px solid #ADD8E6; /* Light Blue */
-            border-radius: 5px;
-        }
-
-        input[type="submit"] {
-            background-color: #4682B4; /* Steel Blue */
-            color: #FFFFFF;
-            padding: 10px 20px;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-        }
-
-        input[type="submit"]:hover {
-            background-color: #5F9EA0; /* Cadet Blue */
-        }
-    </style>
 </head>
 
 <body>
-    <h1>How Can You Give Zack Money?</h1>
-    <div class="content">
-        <img src="https://placekitten.com/200/200" alt="Kitten with a coin" width="200">
-        <p>If you're convinced to part with your hard-earned money and donate it to Zack's lofty (and slightly questionable) pursuits, here's how you can do it:</p>
+    <p>Click the button:</p>
 
-        <!-- Donation Form -->
-        <form action="#" method="post">
-            <label for="name">Full Name:</label>
-            <input type="text" id="name" name="name" required>
+<form action="https://www.paypal.com/donate" method="post" target="_top">
+<input type="hidden" name="business" value="RE8WGYPUY3LB2" />
+<input type="hidden" name="no_recurring" value="0" />
+<input type="hidden" name="currency_code" value="USD" />
+<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif" border="0" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button" />
+<img alt="" border="0" src="https://www.paypal.com/en_US/i/scr/pixel.gif" width="1" height="1" />
+</form>
 
-            <label for="email">Email:</label>
-            <input type="text" id="email" name="email" required>
-
-            <label for="amount">Donation Amount ($):</label>
-            <input type="number" id="amount" name="amount" required>
-
-            <label for="payment-method">Payment Method:</label>
-            <select id="payment-method" name="payment-method">
-                <option value="credit-card">Credit Card</option>
-                <option value="paypal">PayPal</option>
-                <option value="bank-transfer">Bank Transfer</option>
-            </select>
-
-            <input type="submit" value="Donate Now">
-        </form>
-    </div>
-    <div class="navbar">
-        <a href="index.html">Back to Sitemap</a>
-    </div>
 </body>
 
 </html>
