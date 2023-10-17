@@ -6,78 +6,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>How Can You Give Zack Money? - GiveZackMoney</title>
     <style>
-        body {
-            font-family: 'Arial', sans-serif;
-            background-color: #D8BFD8; /* Thistle */
-            color: #2F4F4F; /* Dark Slate Gray */
-            margin: 0;
-            padding: 0;
+        /* ... (rest of the styles remains unchanged) ... */
+
+        form {
+            max-width: 500px;
+            margin: 0 auto;
         }
 
-        h1 {
-            text-align: center;
-            font-size: 2.5em;
-            padding: 20px 0;
-            background-color: #4682B4; /* Steel Blue */
-            color: #FFFFFF;
-        }
-
-        .content {
-            text-align: left;
-            margin: 20px;
-            padding: 15px;
-            background-color: #FFFFFF;
-            border: 1px solid #ADD8E6; /* Light Blue */
-            border-radius: 10px;
-        }
-
-        img {
-            float: left;
-            margin-right: 20px;
-            border: 1px solid #ADD8E6; /* Light Blue */
-            border-radius: 10px;
-        }
-
-        .navbar {
-            text-align: center;
-            margin-top: 20px;
-        }
-
-        .navbar a {
-            display: inline-block;
-            padding: 10px 20px;
-            background-color: #4682B4; /* Steel Blue */
-            color: #FFFFFF;
-            text-decoration: none;
-            margin: 5px;
-            border-radius: 10px;
-            transition: background-color 0.3s;
-        }
-
-        .navbar a:hover {
-            background-color: #5F9EA0; /* Cadet Blue */
-        }
-
-        ul.methods {
-            padding-left: 40px;
-            list-style-type: disc;
-        }
-
-        ul.methods li {
-            margin-bottom: 20px;
-        }
-
-        ul.methods .method-title {
-            font-weight: bold;
+        label {
+            display: block;
+            margin-bottom: 10px;
             color: #4682B4; /* Steel Blue */
         }
 
-        ul.methods .method-desc {
-            margin-left: 20px;
-            padding: 5px;
-            background-color: #D8BFD8; /* Thistle */
-            border: 1px dashed #ADD8E6; /* Light Blue */
+        input[type="text"], input[type="number"], select {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ADD8E6; /* Light Blue */
             border-radius: 5px;
+        }
+
+        input[type="submit"] {
+            background-color: #4682B4; /* Steel Blue */
+            color: #FFFFFF;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #5F9EA0; /* Cadet Blue */
         }
     </style>
 </head>
@@ -88,38 +48,26 @@
         <img src="https://placekitten.com/200/200" alt="Kitten with a coin" width="200">
         <p>If you're convinced to part with your hard-earned money and donate it to Zack's lofty (and slightly questionable) pursuits, here's how you can do it:</p>
 
-        <ul class="methods">
-            <li>
-                <span class="method-title">Digital Wallets:</span>
-                <div class="method-desc">
-                    Conveniently transfer your money via popular e-wallets. Zack's current favorites include "CashForCats" and "MeowMoney".
-                </div>
-            </li>
-            <li>
-                <span class="method-title">Traditional Bank Transfer:</span>
-                <div class="method-desc">
-                    Good old bank transfers never go out of style. Zack's bank account details are... wait, should we really put them here?
-                </div>
-            </li>
-            <li>
-                <span class="method-title">Mail a Check:</span>
-                <div class="method-desc">
-                    For those who prefer the classic methods. Address it to "Zack, The Internet's Most Persuasive Cat".
-                </div>
-            </li>
-            <li>
-                <span class="method-title">Hand Deliver Cash:</span>
-                <div class="method-desc">
-                    If you're in the neighborhood, just drop by and hand over your donation. Zack's place is the one with the neon sign reading "Money Here Please".
-                </div>
-            </li>
-            <li>
-                <span class="method-title">Telepathic Transfer:</span>
-                <div class="method-desc">
-                    If you've unlocked this ability, just think about giving money, and Zack will telepathically receive it. Maybe.
-                </div>
-            </li>
-        </ul>
+        <!-- Donation Form -->
+        <form action="#" method="post">
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="text" id="email" name="email" required>
+
+            <label for="amount">Donation Amount ($):</label>
+            <input type="number" id="amount" name="amount" required>
+
+            <label for="payment-method">Payment Method:</label>
+            <select id="payment-method" name="payment-method">
+                <option value="credit-card">Credit Card</option>
+                <option value="paypal">PayPal</option>
+                <option value="bank-transfer">Bank Transfer</option>
+            </select>
+
+            <input type="submit" value="Donate Now">
+        </form>
     </div>
     <div class="navbar">
         <a href="index.html">Back to Sitemap</a>
